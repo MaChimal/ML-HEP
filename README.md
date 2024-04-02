@@ -1,2 +1,2 @@
 # ML-HEP
-Machine Learning in High Energy Particles
+Machine Learning in High Energy Physics
