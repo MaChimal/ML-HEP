@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mlhep"
+version = "0.1.0"
+description = "Machine Learning in High Energy Physics"
+authors = ["Mario Alberto Amador Chimal <mariochimal00aa@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+notebook = "^7.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pydantic = "^2.6.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
