@@ -11,6 +11,7 @@ notebook = "^7.1.2"
 numpy = "^1.26.4"
 matplotlib = "^3.8.3"
 scipy = "^1.13.0"
+yabox = "^1.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pydantic = "^2.6.4"

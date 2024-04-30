@@ -14,6 +14,12 @@ class GaussianFit(BaseModel):
         arbitrary_types_allowed=True,
     )
 
+    def get_gaussian_values(self, n):
+        return np.random.normal(loc=self.params.mu, scale=self.params.sigma, size=n)
+
+    def gaussian_with_error(self, x):
+        return (1 / (1 * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - 0) / 1) ** 2) + np.random.normal(0, 0.1, 4)
+
     def gaussian(self, x):
         mu, sigma = self.params.mu, self.params.sigma
         return (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mu) / sigma) ** 2)
